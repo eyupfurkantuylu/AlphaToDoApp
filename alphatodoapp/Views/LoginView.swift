@@ -2,16 +2,13 @@
 //  LoginView.swift
 //  alphatodoapp
 //
-//  Created by Eyüp Tüylü on 13.11.2023.
+//  Created by Eyüp Furkan Tüylü on 13.11.2023.
 //
 
 import SwiftUI
 
 struct LoginView: View {
-    
-    @State var email = ""
-    @State var password = ""
-    
+    @StateObject var viewModel = LoginViewViewModel()
     var body: some View {
         NavigationStack{
             VStack{
@@ -19,20 +16,21 @@ struct LoginView: View {
                 HeaderView()
                 // Form - email, şifre ve button
                 Form{
-                    TextField("Email Adresiniz", text: $email)
-                    SecureField("Şifreniz", text: $password)
-                }
-                .frame(height: 150)
-                Button(action: {}, label: {
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 5)
-                            .foregroundStyle(.primary)
-                        Text("Giriş Yap")
-                            .foregroundStyle(.white)
+                    if !viewModel.errorMessage.isEmpty{
+                        Text(viewModel.errorMessage)
+                            .foregroundStyle(.red)
                     }
-                })
-                .frame(height: 50)
-                .padding(.horizontal)
+                    TextField("Email Adresiniz", text: $viewModel.email)
+                        .autocorrectionDisabled()
+                        .autocapitalization(/*@START_MENU_TOKEN@*/.none/*@END_MENU_TOKEN@*/)
+                    SecureField("Şifreniz", text: $viewModel.password)
+                }
+                .frame(height: 200)
+                
+                BigButton(title: "Giriş Yap") {
+                    viewModel.login()
+                }
+               
                 Spacer()
                 // Footer - hesabınız yok mu
                 VStack{

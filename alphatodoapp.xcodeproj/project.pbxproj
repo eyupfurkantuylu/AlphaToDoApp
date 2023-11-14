@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8300EFB32B02936200EC75FD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8300EFB22B02936200EC75FD /* GoogleService-Info.plist */; };
+		8301B1872B03EF2A005D0250 /* BigButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8301B1862B03EF2A005D0250 /* BigButtonView.swift */; };
+		8301B1892B03FC06005D0250 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8301B1882B03FC06005D0250 /* Extensions.swift */; };
 		8349FFD52B02E683008B4CBB /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8349FFD42B02E683008B4CBB /* HeaderView.swift */; };
 		838D60322B02747C00C28E8C /* alphatodoappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838D60312B02747C00C28E8C /* alphatodoappApp.swift */; };
 		838D60342B02747C00C28E8C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838D60332B02747C00C28E8C /* MainView.swift */; };
@@ -49,6 +51,8 @@
 
 /* Begin PBXFileReference section */
 		8300EFB22B02936200EC75FD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8301B1862B03EF2A005D0250 /* BigButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigButtonView.swift; sourceTree = "<group>"; };
+		8301B1882B03FC06005D0250 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		8349FFD42B02E683008B4CBB /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		838D602E2B02747C00C28E8C /* alphatodoapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = alphatodoapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		838D60312B02747C00C28E8C /* alphatodoappApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alphatodoappApp.swift; sourceTree = "<group>"; };
@@ -147,6 +151,7 @@
 				838D606C2B027C3D00C28E8C /* ToDoListView.swift */,
 				838D60742B027C7000C28E8C /* ToDoListItemView.swift */,
 				8349FFD42B02E683008B4CBB /* HeaderView.swift */,
+				8301B1862B03EF2A005D0250 /* BigButtonView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -180,6 +185,7 @@
 				8300EFB22B02936200EC75FD /* GoogleService-Info.plist */,
 				838D60312B02747C00C28E8C /* alphatodoappApp.swift */,
 				838D60352B02747C00C28E8C /* Assets.xcassets */,
+				8301B1882B03FC06005D0250 /* Extensions.swift */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -280,6 +286,7 @@
 				838D60712B027C5300C28E8C /* LoginView.swift in Sources */,
 				8349FFD52B02E683008B4CBB /* HeaderView.swift in Sources */,
 				838D60812B027CFF00C28E8C /* LoginViewViewModel.swift in Sources */,
+				8301B1872B03EF2A005D0250 /* BigButtonView.swift in Sources */,
 				838D60342B02747C00C28E8C /* MainView.swift in Sources */,
 				838D607B2B027CDD00C28E8C /* MainViewViewModel.swift in Sources */,
 				838D607F2B027CF600C28E8C /* NewItemViewViewModel.swift in Sources */,
@@ -291,6 +298,7 @@
 				838D60772B027C9B00C28E8C /* User.swift in Sources */,
 				838D60752B027C7000C28E8C /* ToDoListItemView.swift in Sources */,
 				838D60322B02747C00C28E8C /* alphatodoappApp.swift in Sources */,
+				8301B1892B03FC06005D0250 /* Extensions.swift in Sources */,
 				838D60792B027CB300C28E8C /* ToDoListItem.swift in Sources */,
 				838D606F2B027C4A00C28E8C /* NewItemView.swift in Sources */,
 				838D60852B027D1900C28E8C /* ToDoListViewViewModel.swift in Sources */,
